@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="refresh" content="60"><!--refresh per 60 seconds-->
     <title>Seraphine Wall</title>
-    <link href="style_PhotoWall.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style_PhotoWall.css" rel="stylesheet" type="text/css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body onload="variableImage()">
@@ -12,7 +12,7 @@
         function variableImage(){
             for(var i = 0;i<12;i++){
                 var NowFrame=parseInt(Math.random()*18);
-                document.getElementById("showImage"+i).src="img/wall/"+NowFrame+".jpg";
+                document.getElementById("showImage"+i).src="src/"+NowFrame+".jpg";
             }
         }
     </script>
